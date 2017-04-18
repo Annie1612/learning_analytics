@@ -1,0 +1,275 @@
+@media (min-width: 992px){
+    .typo-line{
+        padding-left: 140px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .typo-line .category{
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0px;
+        position: absolute;
+    }
+}
+
+.all-icons [class*="pe-"]{
+    font-size: 40px;
+}
+.all-icons input{
+    border: 0;
+}
+.all-icons .font-icon-detail{
+    text-align: center;
+    padding: 45px 0px 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+.all-icons .font-icon-detail input{
+    margin: 25px auto 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+
+.places-buttons .btn{
+    margin-bottom: 30px
+}
+.sidebar .nav > li.active-pro{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.sidebar .nav > li.active-pro a{
+    background: rgba(255, 255, 255, 0.14);
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.table-upgrade td:nth-child(4),
+.table-upgrade td:nth-child(3){
+    text-align: center;
+}
+ .container {
+  width: 80%;
+  margin: 15px auto;
+}
+
+.chart-demo {
+  float: left;
+  width: 540px;
+  
+}
+
+.chart-demos {
+  float: left;
+  width: 540px;
+  
+}
+
+
+.mask {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 12.5rem;
+  height: 6.25rem;
+  margin: 1.25rem;
+}
+
+.semi-circle {
+  position: relative;
+  display: block;
+  width: 12.5rem;
+  height: 6.25rem;
+  background: linear-gradient(to right, #c0392b 0%, #f1c40f 50%, #1abc9c 100%);
+  border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
+}
+.semi-circle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  width: 8.75rem;
+  height: 4.375rem;
+  margin-left: -4.375rem;
+  background: #fff;
+  border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
+}
+
+.semi-circle--mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12.5rem;
+  height: 12.5rem;
+  background: transparent;
+  transform: rotate(120deg) translate3d(0, 0, 0);
+  transform-origin: center center;
+  backface-visibility: hidden;
+  transition: all .3s ease-in-out;
+}
+.semi-circle--mask::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: 2;
+  display: block;
+  width: 12.625rem;
+  height: 6.375rem;
+  margin: -1px 0 0 -1px;
+  background: #f2f2f2;
+  border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
+}
+
+.gauge--1 .semi-circle {
+  background: #1abc9c;
+}
+
+.gauge--2 .semi-circle {
+  background: #c0392b;
+}
+.gauge--2 .semi-circle--mask {
+  transform: rotate(20deg) translate3d(0, 0, 0);
+}
+.chart-gauge {
+  width: 400px;
+  margin: 10px auto;
+}
+		
+			.dial
+			{
+				
+				overflow: hidden;
+			}
+
+			.gauge
+			{
+				position: absolute;
+				width: 500px;
+				height: 500px;
+				top: 100px;
+				left: 50%;
+				margin-left: -250px;
+				border-radius: 100%;
+				transform-origin: 50% 50%;
+				-webkit-transform-origin: 50% 50%;
+				-ms-transform-origin: 50% 50%;
+				-webkit-transform: rotate(0deg);
+
+			}
+
+			.meter
+			{
+				margin: 0;
+				padding: 0;
+			}
+
+			.meter > li
+			{
+				width: 250px;
+				height: 250px;
+				list-style-type: none;
+				position: absolute;
+				border-top-left-radius: 250px;
+				border-top-right-radius: 0px;
+				transform-origin:  100% 100%;;
+				-webkit-transform-origin:  100% 100%;;
+				-ms-transform-origin:  100% 100%;;
+				transition-property: -webkit-transform;
+				pointer-events: none;
+			}
+
+			.meter .low
+			{
+				transform: rotate(0deg); /* W3C */
+				-webkit-transform: rotate(0deg); /* Safari & Chrome */
+				-moz-transform: rotate(0deg); /* Firefox */
+				-ms-transform: rotate(0deg); /* Internet Explorer */
+				-o-transform: rotate(0deg); /* Opera */
+				z-index: 8;
+				background-color: #FA0E1C;
+			}
+
+			.meter .normal
+			{
+				transform: rotate(45deg); /* W3C */
+				-webkit-transform: rotate(45deg); /* Safari & Chrome */
+				-moz-transform: rotate(45deg); /* Firefox */
+				-ms-transform: rotate(45deg); /* Internet Explorer */
+				-o-transform: rotate(45deg); /* Opera */
+				z-index: 7;
+				background-color: #FEE62A;
+			}
+
+			.meter .high
+			{
+				transform: rotate(90deg); /* W3C */
+				-webkit-transform: rotate(90deg); /* Safari & Chrome */
+				-moz-transform: rotate(90deg); /* Firefox */
+				-ms-transform: rotate(90deg); /* Internet Explorer */
+				-o-transform: rotate(90deg); /* Opera */
+				z-index: 6;
+				background-color: #09B84F;
+			}
+
+			
+			.dial,
+			.dial .inner
+			{
+				width: 470px;
+				height: 470px;
+				position: relative;
+				top: 10px;
+				left: 5px;
+				border-radius: 100%;
+				border-color: purple;
+				z-index: 10;
+				transition-property: -webkit-transform;
+				transition-duration: 1s;
+				transition-timing-function: ease-in-out;
+				transform: rotate(0deg); /* W3C */
+				-webkit-transform: rotate(0deg); /* Safari & Chrome */
+				-moz-transform: rotate(0deg); /* Firefox */
+				-ms-transform: rotate(0deg); /* Internet Explorer */
+				-o-transform: rotate(0deg); /* Opera */
+			}
+
+			.dial .arrow
+			{
+				width: 0; 
+				height: 0; 
+				position: absolute;
+				top: 214px;
+				left: 24px;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-bottom: 32px solid #FFFFFF;
+				-webkit-transform: rotate(-88deg); /* Safari & Chrome */
+				-moz-transform: rotate(88deg); /* Firefox */
+				-ms-transform: rotate(88deg); /* Internet Explorer */
+				-o-transform: rotate(88deg); /* Opera */
+
+			}
+
+			.gauge .value
+			{
+				font-family: 'Josefin Slab', serif;
+				font-size: 50px;
+				color: #ffffff;
+				position: absolute;
+				top: 142px;
+				left: 45%;
+				z-index: 11;
+			}
+
+
+ 
